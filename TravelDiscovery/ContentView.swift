@@ -33,8 +33,8 @@ struct DiscoverCategoriesView: View {
         .init(name: "Art", imageName: "paintpalette.fill"),
         .init(name: "Sport", imageName: "sportscourt.fill"),
         .init(name: "Live Events", imageName: "music.mic"),
-        .init(name: "Food", imageName: "music.mic"),
-        .init(name: "History", imageName: "music.mic")
+        .init(name: "Food", imageName: "fork.knife"),
+        .init(name: "History", imageName: "books.vertical.fill")
     ]
     
     var body: some View {
@@ -76,7 +76,7 @@ struct PopularDestinationsView: View {
                     ForEach(0..<5, id: \.self) { num in
                         Spacer()
                             .frame(width: 125, height: 150)
-                            .background(Color.gray)
+                            .background(Color(.init(white: 0.9, alpha: 1)))
                             .cornerRadius(5)
                             .shadow(color: .gray, radius: 4, x: 0.0, y: 2)
                             .padding(.bottom)
